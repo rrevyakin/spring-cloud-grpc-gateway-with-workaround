@@ -1,0 +1,13 @@
+server:
+  port: 8090
+  http2:
+    enabled: true
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: grpc
+          uri: https://localhost:6565
+          predicates:
+            - Path=/**
