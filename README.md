@@ -1,4 +1,5 @@
 **Service description**
+
 Simple Spring Cloud GRPC Gateway with workaround to help reactor-netty pass endStream metadata flag obtained from the server to netty, which then correctly pass msg with error (grpc-status!=0) to the client. Works only with workaround in reactory-netty done here - https://github.com/rrevyakin/reactor-netty-with-grpc-workaround/tree/v.1.0.21.1
 
 **Workaround description**
